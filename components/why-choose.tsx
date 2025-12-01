@@ -22,7 +22,7 @@ export default function WhyChoose() {
 
           {/* Right side - Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose TechFlow</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose NexSpire Technologies</h2>
 
             <ul className="space-y-4">
               {reasons.map((reason, index) => (

@@ -30,7 +30,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             <button onClick={() => scrollTo("home")} className="text-gray-700 hover:text-teal-600 transition">Home</button>
             <button onClick={() => scrollTo("services")} className="text-gray-700 hover:text-teal-600 transition">Services</button>
-            <button onClick={() => scrollTo("about")} className="text-gray-700 hover:text-teal-600 transition">About</button>
+            <button onClick={() => scrollTo("aboutus")} className="text-gray-700 hover:text-teal-600 transition">About</button>
             <button onClick={() => scrollTo("ourwork")} className="text-gray-700 hover:text-teal-600 transition">Our Work</button>
             <button onClick={() => scrollTo("contact")} className="text-gray-700 hover:text-teal-600 transition">Contact</button>
           </div>
