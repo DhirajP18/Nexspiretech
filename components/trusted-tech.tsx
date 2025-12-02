@@ -1,22 +1,34 @@
 export default function TrustedTech() {
-  const techs = [".Net Core", "Next.js", "Azure DevOps", "TypeScript", "SQL Server", "Docker"]
+  const techs = [
+    { name: ".NET Core", logo: "/logos/dotnet.png" },
+    { name: "Next.js", logo: "/logos/nextjs.png" },
+    { name: "Azure DevOps", logo: "/logos/azuredevops.png" },
+    { name: "Github", logo: "/logos/github.png" },
+    { name: "SQL Server", logo: "/logos/sqlserver.png" },
+    { name: "Docker", logo: "/logos/docker.png" }
+  ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-emerald-50 to-teal-50 border-y border-emerald-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-gray-600 font-semibold mb-8">TRUSTED TECHNOLOGIES:</p>
+    <section className="py-1 bg-gradient-to-r from-emerald-30 to-teal-30 border-y border-emerald-200">
+      <div className="max-w-7xl mx-auto px-4">
+        <p className="text-center text-gray-600 font-semibold mb-10 tracking-wide">
+          TRUSTED TECHNOLOGIES:
+        </p>
 
         <div className="flex flex-wrap justify-center gap-6">
           {techs.map((tech, index) => (
             <div
               key={index}
-              className="px-6 py-3 bg-white rounded-lg border border-emerald-200 shadow-sm hover:shadow-md transition"
+              className="flex items-center gap-3 px-4 py-2 bg-white rounded-lg 
+                         border border-emerald-300 shadow-sm hover:shadow-md 
+                         transition-all hover:scale-105"
             >
-              <span className="text-gray-700 font-semibold">{tech}</span>
+              <img src={tech.logo} alt={tech.name} className="w-12 h-18 object-contain" />
+              <span className="text-gray-800 font-medium text-sm">{tech.name}</span>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
